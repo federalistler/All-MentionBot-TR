@@ -30,8 +30,8 @@ async def start(event):
   await event.reply("**Etiketleme Botu**, Grup veya kanaldaki neredeyse tüm üyelerden bahsedebilir ★\nDaha fazla bilgi için **/help**'i tıklayın.",
                     buttons=(
                       [Button.url('🌟 Beni Bir Gruba Ekle', 'https://t.me/UserEtigetBot?startgroup=a'),
-                      Button.url('📣 Support', 'https://t.me/Sohbetdestek'),
-                      Button.url('👮‍♂️ Sahibim', 'https://t.me/Mahoaga')]
+                      Button.url('📣 Support', 'https://t.me/+DoMHxUEX3TUwMjlk'),
+                      Button.url('👮‍♂️ Sahibim', 'https://t.me/Merdoocan')]
                     ),
                     link_preview=False
                    )
@@ -41,8 +41,8 @@ async def help(event):
   await event.reply(helptext,
                     buttons=(
                       [Button.url('🌟 Beni Bir Gruba Ekle', 'https://t.me/UserEtigetBot?startgroup=a'),
-                       Button.url('📣 Support', 'https://t.me/Sohbetdestek'),
-                      Button.url('👮‍♂️ Sahibim', 'https://t.me/Mahoaga')]
+                       Button.url('📣 Support', 'https://t.me/+DoMHxUEX3TUwMjlk'),
+                      Button.url('👮‍♂️ Sahibim', 'https://t.me/Merdoocan')]
                     ),
                     link_preview=False
                    )
@@ -167,7 +167,7 @@ async def mentionall(event):
       usrnum += 1
       usrtxt += f"🌀 - [{usr.first_name}](tg://user?id={usr.id}) \n"
       if event.chat_id not in anlik_calisan:
-        await event.respond("Işlem Başarıyla Durduruldu\n\n**Buda sizin reklamınız ola bilir @umutyolculuk**❌")
+        await event.respond("Işlem Başarıyla Durduruldu\n\n**Buda sizin reklamınız ola bilir @Merdoocan**❌")
         return
       if usrnum == 5:
         await client.send_message(event.chat_id, f"{usrtxt}\n\n{msg}")
@@ -232,7 +232,7 @@ async def mentionall(event):
       usrnum += 1
       usrtxt += f"**👨‍✈️ - [{usr.first_name}](tg://user?id={usr.id}) \n**"
       if event.chat_id not in tekli_calisan:
-        await event.respond("**Işlem Başarıyla Durduruldu\n\n**Buda sizin reklamınız ola bilir @umutyolculuk**❌****")
+        await event.respond("**Işlem Başarıyla Durduruldu\n\n**Buda sizin reklamınız ola bilir @Merdoocan**❌****")
         return
       if usrnum == 1:
         await client.send_message(event.chat_id, f"{usrtxt} {msg}")
@@ -250,7 +250,7 @@ async def mentionall(event):
       usrnum += 1
       usrtxt += f"👮‍♀️ - [{usr.first_name}](tg://user?id={usr.id}) \n"
       if event.chat_id not in tekli_calisan:
-        await event.respond("Işlem Başarıyla Durduruldu\n\n**Buda sizin reklamınız ola bilir @umutyolculuk**❌**")
+        await event.respond("Işlem Başarıyla Durduruldu\n\n**Buda sizin reklamınız ola bilir @Merdoocan**❌**")
         return
       if usrnum == 1:
         await client.send_message(event.chat_id, usrtxt, reply_to=msg)
